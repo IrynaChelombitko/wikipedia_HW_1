@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2em; 
+    color: navy;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: navy;
+}
+
+p {
+    margin-bottom: 1em; 
+}
+
+span {
+    color: blue; 
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-container {
+    flex: 1;
+    height: 200px; /* Фиксированная высота для соответствия с изображением */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.image-container {
+    margin-right: 20px;
+    height: 200px; /* Фиксированная высота контейнера */
+    width: 180px; /* Фиксированная ширина контейнера */
+    border: 1px solid grey; /* Тонкая серая рамка */
+    padding: 5px; /* Небольшой отступ внутри контейнера */
+    box-sizing: border-box; /* Учитывать рамку и отступ в общих размерах */
+}
+
+.image-container img {
+    height: 100%; /* Высота изображения равна высоте контейнера */
+    width: 100%; /* Ширина изображения равна ширине контейнера */
+    object-fit: contain; /* Изображение масштабируется, сохраняя пропорции */
+}
+
+.image-caption {
+    text-align: center;
+    margin-top: 5px;
+    border: 1px solid grey; /* Тонкая серая рамка */
+    padding: 2px; /* Небольшой отступ */
+}
